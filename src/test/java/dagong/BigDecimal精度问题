@@ -1,0 +1,10 @@
+public BigDecimal setScale(int newScale,RoundingMode roundingMode)返回
+BigDecimal,其精度为指定值,其非标度值通过此BigDecimal的非标度值乘以或者除以十的适当次幂来确定
+如果该操作减少标度,则非标度值必须被除(而不是乘),并且该值可以更改,在这种情况下,将指定的舍入模式应用到除法中
+参数:
+newScale-要返回的BigDecimal值的标度
+roundingMode-要应用的舍入模式
+返回：
+一个 BigDecimal，其标度为指定值，其非标度值可以通过此 BigDecimal 的非标度值乘以或除以十的适当次幂来确定，以维护其总值。
+抛出：
+ArithmeticException - 如果 roundingMode==UNNECESSARY，并且指定的标度操作要求进行舍入。
